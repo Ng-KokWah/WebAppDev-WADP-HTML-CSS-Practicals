@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charSet="utf-8"/>
+<title>Simple High Low Game</title>
+<script type="text/javascript">
+var luckyNo;
+function generateNumber() {
+	luckyNo = Math.floor(Math.random()*100)+1;
+}
+function match(number) {
+     var result=false;
+	 if(number == luckyNo) {
+		alert("Yes! Congratulations");
+		result=true;
+	 }// compare number with the luckyNo
+	 else if(number < luckyNo) {
+		alert("Number too low!!");
+	 }// popup box to give hints to user too low or too high or bingo
+	 else{
+		alert("Number too high!!");
+	 }// update result if matched (bingo)
+	 return result;
+}
+		
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var play=true;
+generateNumber();
+while (play) {
+   var guess=prompt("Please enter a number between 1 and 100",0);
+   if (match(guess)){
+		var find = confirm("Do you want to play again?");
+		if(find == true)
+			generateNumber();
+		// ask the user whether to play again
+		// if yes, generate luckyNo again
+		else {
+			play = false;
+		}// otherwise, out from the loop
+}
+}
+alert("Bye!!");
+window.close();
+</script>
+</body>
+</html>

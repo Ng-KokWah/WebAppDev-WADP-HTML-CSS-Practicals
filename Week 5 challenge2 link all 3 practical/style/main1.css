@@ -1,0 +1,58 @@
+.heading {
+	background-color:rgba(255,0,0,0.4);
+	width:100%;
+	padding:10px;
+}
+
+div > h1 {
+	text-align:center;
+}
+
+.navbar > ul {
+	width:600px;
+	list-style-type:none;
+	margin:0px auto;
+	padding:5px;
+}
+
+.navbar ul li {
+	display:inline-block;
+	text-align:center;	
+	margin:50px;	
+	padding:30px;
+	background-color:orange;
+	border-radius:10px;
+	box-shadow:5px 5px 5px black;
+}
+
+hr {
+	border:5px solid deepskyblue;
+}
+
+
+.headimg {
+border:10px dotted green;
+height:85px;
+width:85px;
+}
+
+body {
+background-image:url('https://i.ytimg.com/vi/LCs0ZEHyQVg/maxresdefault.jpg');
+background-size: cover;
+}
+
+.list li{
+font-size:40px;
+font-family: Cursive;
+}
+
+
+.list li:hover {
+position: relative;
+top:2px;
+}
+
+.list li:active{
+position:relative;
+top:2px;
+}
